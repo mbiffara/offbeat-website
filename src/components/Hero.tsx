@@ -48,25 +48,14 @@ export default function Hero({ data }: { data: HeroData }) {
         </div>
       </div>
 
-      <div className="relative overflow-hidden bg-offbeat-violet py-3">
-        <div className="flex w-max animate-marquee items-center gap-6 whitespace-nowrap md:hidden">
+      <div className="relative overflow-hidden bg-offbeat-violet py-3 md:hidden">
+        <div className="flex w-max animate-marquee items-center gap-6 whitespace-nowrap">
           {[...statItems, ...statItems].map((label, i) => (
             <span
               key={`m-${label}-${i}`}
               className="flex items-center gap-6 text-base font-semibold uppercase tracking-tight text-offbeat-white"
             >
               {label}
-              <Spark />
-            </span>
-          ))}
-        </div>
-        <div className="hidden w-max animate-marquee items-center gap-6 whitespace-nowrap md:flex">
-          {[...data.marquee, ...data.marquee].map((word, i) => (
-            <span
-              key={`d-${word}-${i}`}
-              className="flex items-center gap-6 text-base font-semibold uppercase tracking-tight text-offbeat-white md:text-lg"
-            >
-              {word}
               <Spark />
             </span>
           ))}
