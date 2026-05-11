@@ -9,31 +9,29 @@ type HeroData = {
 
 export default function Hero({ data }: { data: HeroData }) {
   return (
-    <section id="home" className="relative w-full overflow-hidden">
-      <div className="relative isolate">
-        <div className="absolute inset-0 -z-10">
-          <video
-            src="/images/hero.mp4"
-            poster="/images/hero-poster.jpg"
-            autoPlay
-            loop
-            muted
-            playsInline
-            preload="auto"
-            className="absolute inset-0 h-full w-full object-cover"
-          />
-          <div className="absolute inset-0 bg-gradient-to-b from-offbeat-black/30 via-offbeat-black/50 to-offbeat-black" />
-        </div>
+    <section id="home" className="relative isolate w-full overflow-hidden">
+      <div className="absolute inset-0 -z-10">
+        <video
+          src="/images/hero.mp4"
+          poster="/images/hero-poster.jpg"
+          autoPlay
+          loop
+          muted
+          playsInline
+          preload="auto"
+          className="absolute inset-0 h-full w-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-offbeat-black/30 via-offbeat-black/50 to-offbeat-black" />
+      </div>
 
-        <div className="px-4 pb-10 pt-24 md:px-16 md:pt-32 md:pb-20">
-          <div className="max-w-[638px]">
-            <p className="text-base md:text-xl">{data.eyebrow}</p>
-            <h1 className="mt-4 text-[42px] font-medium leading-[1.05] tracking-tight md:mt-4 md:text-[70px] md:leading-none">
-              {data.titleStart}{" "}
-              <span className="text-offbeat-violet">{data.titleAccent}</span>
-            </h1>
-            <p className="mt-4 text-lg md:mt-6 md:text-2xl">{data.slogan}</p>
-          </div>
+      <div className="px-4 pb-10 pt-32 md:px-16 md:pt-52 md:pb-20">
+        <div className="max-w-[638px]">
+          <p className="text-base md:text-xl">{data.eyebrow}</p>
+          <h1 className="mt-4 text-[42px] font-medium leading-[1.05] tracking-tight md:mt-4 md:text-[70px] md:leading-none">
+            {data.titleStart}{" "}
+            <span className="text-offbeat-violet">{data.titleAccent}</span>
+          </h1>
+          <p className="mt-4 text-lg md:mt-6 md:text-2xl">{data.slogan}</p>
         </div>
       </div>
 
