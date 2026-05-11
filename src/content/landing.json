@@ -1,0 +1,204 @@
+{
+  "header": {
+    "logoAlt": "OFFBEAT",
+    "nav": [
+      { "label": "Home", "href": "#home" },
+      { "label": "The System", "href": "#system" },
+      { "label": "Credentials", "href": "#credentials" },
+      { "label": "Who It's For", "href": "#built-for" },
+      { "label": "Contact", "href": "#contact" },
+      { "label": "FAQs", "href": "#faq" }
+    ],
+    "cta": { "label": "Let's chat", "href": "#contact" }
+  },
+  "hero": {
+    "eyebrow": "Operational Infrastructure for Nightlife · Boston, MA",
+    "titleStart": "The infrastructure the nightlife ecosystem",
+    "titleAccent": "runs on",
+    "slogan": "We don't promise. We operate.",
+    "marquee": [
+      "Music programming",
+      "Talent buying",
+      "Show advance",
+      "Event marketing",
+      "Partnerships",
+      "On-site operations"
+    ],
+    "stats": [
+      {
+        "value": "15",
+        "label": "Years",
+        "description": "Operating electronic nightlife in Boston before launching OFFBEAT as a service."
+      },
+      {
+        "value": "+1500",
+        "label": "Events operated",
+        "description": "A system shaped in real nights, not in theory."
+      },
+      {
+        "value": "100k",
+        "label": "Attendees",
+        "description": "Audience scale earned through years of consistent delivery."
+      },
+      {
+        "value": "$5M+",
+        "label": "Ticket Revenue",
+        "description": "Commercial proof that the system performs under pressure."
+      }
+    ]
+  },
+  "ourSystem": {
+    "eyebrow": "OUR SYSTEM · WHAT WE DO",
+    "titleStart": "What others buy in pieces,",
+    "titleAccent": "OFFBEAT integrates into one system.",
+    "description": "Music programming, talent buying, show advance, event marketing, partnerships, and on-site operations, aligned through one team, one account, and one accountable partner.",
+    "items": [
+      {
+        "title": "MUSIC PROGRAMMING & TALENT BUYING",
+        "description": "Lineup direction, artist recommendations, and direct access to Tier 1 agencies across the global electronic circuit. OFFBEAT helps define who makes sense to book, then handles negotiation, contracts, and rider management under one relationship."
+      },
+      {
+        "title": "EVENT MARKETING & PARTNERSHIPS",
+        "description": "Communication strategy, audience development, sponsorship packaging, and partner activation. Growth that builds community, strengthens the brand, and creates revenue beyond ticket sales."
+      },
+      {
+        "title": "SHOW ADVANCE",
+        "description": "Full pre-event coordination: hospitality, technical production, and communication with the artist's team. Fewer surprises on show day."
+      },
+      {
+        "title": "EVENT OPERATIONS & STAFF PLANNING",
+        "description": "Operational team assembly, staff planning, briefing, coordination, and real-time management during the event. Clear roles. Cleaner execution."
+      }
+    ]
+  },
+  "credentials": {
+    "eyebrow": "OUR CREDENTIALS · TESTED IN MARKET",
+    "titleStart": "Before offering this system to others,",
+    "titleAccent": "we built it for ourselves",
+    "description": "Before launching OFFBEAT as a service, the team operated Province 44, Bijou, and several other events in Boston. This is not a retrospective case study. It is a system built in live market conditions, under real audience pressure, real budgets, and real operational complexity. Clients do not pay for experimentation. They inherit tested judgment, working methods, and years of iteration.",
+    "highlights": [
+      {
+        "title": "OWN TRACK RECORD",
+        "description": "Operating Province 44 in Boston before launching OFFBEAT as a service. Every recommendation was tested first with our own reputation on the line."
+      },
+      {
+        "title": "DIRECT ACCESS",
+        "description": "Relationships with key booking agencies across the global electronic circuit. Not contacts. Relationships built over years of delivered shows."
+      },
+      {
+        "title": "EVENTS OPERATED",
+        "description": "$5M+ in ticket revenue · 100K+ attendees. Not aspiration. Verifiable track record."
+      },
+      {
+        "title": "PULL QUOTE",
+        "description": "We don't sell experiments. We transfer a system."
+      }
+    ]
+  },
+  "builtFor": {
+    "eyebrow": "Who OFFBEAT is built for",
+    "titleStart": "If any of these situations sounds familiar,",
+    "titleAccent": "OFFBEAT is probably the system you're missing.",
+    "cards": [
+      {
+        "title": "THE ESTABLISHED PROMOTER",
+        "description": "You have the vision. We absorb the load. Scale without fragmenting. A system that replaces what used to cost you four vendors and twice the coordination."
+      },
+      {
+        "title": "THE VENUE OPERATOR",
+        "description": "You've been let down before. We show you the track record before you commit. Province 44 has been running for 15 years. It exists so you can verify how we operate before saying yes."
+      },
+      {
+        "title": "THE EMERGING PROMOTER",
+        "description": "You do not need to start small. You need to start with the right system. Real access to the circuit. The infrastructure that normally takes years to build, available from your first show."
+      },
+      {
+        "title": "THE HOSPITALITY GROUP",
+        "description": "You bring the space. We bring the operating layer that makes it work. Turn your space into a cultural destination without having to build a nightlife operation from scratch."
+      }
+    ]
+  },
+  "weWork": {
+    "eyebrow": "Thanks for choosing us",
+    "titleStart": "Who",
+    "titleAccent": "we work",
+    "titleEnd": "with",
+    "partners": [
+      { "name": "Bijou", "src": "/images/partner-bijou.png" },
+      { "name": "Province 44", "src": "/images/partner-province44.png" },
+      { "name": "AfterBrunch", "src": "/images/partner-afterbrunch.png" }
+    ]
+  },
+  "contact": {
+    "title": "Contact Us",
+    "description": "You do not need an elaborate brief. Tell us about the project, the venue, the artist, the objective, and the main constraint, and in 30 minutes we will tell you clearly whether OFFBEAT is the right system to make it work. If we are not the right answer, we will tell you that too.",
+    "privacy": "Your information is confidential and will not be shared with third parties.",
+    "fields": [
+      { "name": "name", "label": "Name", "placeholder": "Enter your name", "type": "text" },
+      { "name": "email", "label": "Email", "placeholder": "Enter your email", "type": "email" },
+      { "name": "phone", "label": "Phone", "placeholder": "Enter your phone", "type": "tel" },
+      { "name": "instagram", "label": "Instagram", "placeholder": "Enter your handle", "type": "text" },
+      { "name": "message", "label": "Message", "placeholder": "Tell us about your project", "type": "textarea" }
+    ],
+    "serviceQuestion": "What service are you looking for?",
+    "services": [
+      "Talent Buying",
+      "Show Advance",
+      "Event Marketing",
+      "Event Operations",
+      "Everything integrated",
+      "I'm not sure yet, I want to talk"
+    ],
+    "submitLabel": "Send Message"
+  },
+  "faq": {
+    "eyebrow": "Everything you need to know about working with OFFBEAT",
+    "titleAccent": "Frequently",
+    "titleEnd": "Asked Questions",
+    "items": [
+      {
+        "question": "What does OFFBEAT do?",
+        "answer": "OFFBEAT is the operational infrastructure layer for nightlife. We integrate music programming, talent buying, show advance, event marketing, partnerships, and on-site operations under one accountable team."
+      },
+      {
+        "question": "Is OFFBEAT a booking agency?",
+        "answer": "No. We have direct access to Tier 1 agencies across the global electronic circuit, and we handle booking as part of a larger operating system, not in isolation."
+      },
+      {
+        "question": "What services does OFFBEAT offer?",
+        "answer": "Talent buying, show advance, event marketing, partnerships, event operations, and staff planning, integrated through one team and one account."
+      },
+      {
+        "question": "Can I hire OFFBEAT for just one service?",
+        "answer": "Yes. Most clients start with one service area and expand once the system proves itself."
+      },
+      {
+        "question": "Who is OFFBEAT for?",
+        "answer": "Established promoters, venue operators, emerging promoters, and hospitality groups who want infrastructure instead of vendors."
+      },
+      {
+        "question": "What makes OFFBEAT different?",
+        "answer": "We built and operated our own venues and events for years before offering this as a service. You inherit tested judgment, not theory."
+      },
+      {
+        "question": "How do I contact OFFBEAT?",
+        "answer": "Write to hello@offbeat.co or fill out the contact form on this page. We respond within 30 minutes during business hours."
+      }
+    ]
+  },
+  "footer": {
+    "logoAlt": "OFFBEAT",
+    "tagline": "Operational Infrastructure for Nightlife · Boston, MA",
+    "contact": "hello@offbeat.co · offbeat.co",
+    "copyright": "© 2026 OFFBEAT. All rights reserved.",
+    "legal": [
+      { "label": "Terms of Use", "href": "#terms" },
+      { "label": "Privacy Policy", "href": "#privacy" }
+    ],
+    "credit": "Made by Pipa Brands",
+    "social": [
+      { "label": "Instagram", "href": "https://instagram.com/offbeat", "icon": "instagram" },
+      { "label": "LinkedIn", "href": "https://linkedin.com/company/offbeat", "icon": "linkedin" }
+    ]
+  }
+}
