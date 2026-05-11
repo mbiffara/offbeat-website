@@ -7,7 +7,20 @@ type HeroData = {
   stats: { value: string; label: string; description: string }[];
 };
 
+const Spark = () => (
+  <svg
+    viewBox="0 0 12 12"
+    fill="currentColor"
+    aria-hidden="true"
+    className="h-3 w-3 shrink-0"
+  >
+    <path d="M6 0C6.4 3.4 8.6 5.6 12 6C8.6 6.4 6.4 8.6 6 12C5.6 8.6 3.4 6.4 0 6C3.4 5.6 5.6 3.4 6 0Z" />
+  </svg>
+);
+
 export default function Hero({ data }: { data: HeroData }) {
+  const statItems = data.stats.map((s) => `${s.value} ${s.label}`);
+
   return (
     <section id="home" className="relative isolate w-full overflow-hidden">
       <div className="absolute inset-0 -z-10">
@@ -35,21 +48,34 @@ export default function Hero({ data }: { data: HeroData }) {
         </div>
       </div>
 
-      <div className="relative -mt-2 overflow-hidden border-y border-offbeat-violet-border/40 bg-offbeat-black py-6">
-        <div className="flex w-max animate-marquee gap-12 whitespace-nowrap">
-          {[...data.marquee, ...data.marquee, ...data.marquee].map((word, i) => (
+      <div className="relative overflow-hidden bg-offbeat-violet py-3">
+        <div className="flex w-max animate-marquee items-center gap-6 whitespace-nowrap md:hidden">
+          {[...statItems, ...statItems].map((label, i) => (
             <span
-              key={`${word}-${i}`}
-              className="text-2xl text-offbeat-white md:text-3xl"
+              key={`m-${label}-${i}`}
+              className="flex items-center gap-6 text-base font-semibold uppercase tracking-tight text-offbeat-white"
             >
-              {word}
-              <span className="ml-12 text-offbeat-violet">•</span>
+              {label}
+              <Spark />
             </span>
           ))}
         </div>
+        <div className="hidden w-max animate-marquee items-center gap-6 whitespace-nowrap md:flex">
+          {[...data.marquee, ...data.marquee].map((word, i) => (
+            <span
+              key={`d-${word}-${i}`}
+              className="flex items-center gap-6 text-base font-semibold uppercase tracking-tight text-offbeat-white md:text-lg"
+            >
+              {word}
+              <Spark />
+            </span>
+          ))}
+        </div>
+        <div className="pointer-events-none absolute inset-y-0 left-0 w-12 bg-gradient-to-r from-offbeat-violet to-transparent" />
+        <div className="pointer-events-none absolute inset-y-0 right-0 w-12 bg-gradient-to-l from-offbeat-violet to-transparent" />
       </div>
 
-      <div className="relative px-4 py-10 md:px-16 md:py-20">
+      <div className="relative hidden px-4 py-10 md:block md:px-16 md:py-20">
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4 lg:gap-8">
           {data.stats.map((stat) => (
             <div

@@ -23,7 +23,7 @@ export default function Home() {
           src="/images/ondasexpansivas.gif"
           alt=""
           aria-hidden="true"
-          className="pointer-events-none absolute left-0 top-1/2 -z-10 w-full -translate-y-1/2 opacity-70 mix-blend-screen"
+          className="pointer-events-none absolute left-0 top-1/2 -z-10 hidden w-full -translate-y-1/2 opacity-70 mix-blend-screen md:block"
         />
         <ContactUs data={content.contact} />
         <Faq data={content.faq} />
