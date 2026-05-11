@@ -29,9 +29,12 @@ export default function BuiltFor({ data }: { data: BuiltForData }) {
         </h2>
       </div>
 
-      <div className="mt-12 grid grid-cols-1 gap-6 md:mt-20 md:grid-cols-2 lg:grid-cols-4 lg:gap-8">
+      <div className="-mx-4 mt-12 flex snap-x snap-mandatory gap-4 overflow-x-auto px-4 pb-2 md:mx-0 md:mt-20 md:grid md:snap-none md:grid-cols-2 md:gap-6 md:overflow-visible md:px-0 md:pb-0 lg:grid-cols-4 lg:gap-8">
         {data.cards.map((card) => (
-          <div key={card.title} className="flex flex-col gap-4">
+          <div
+            key={card.title}
+            className="flex w-[280px] shrink-0 snap-start flex-col gap-4 rounded-card border border-offbeat-violet-border bg-offbeat-violet-soft p-4 backdrop-blur-sm md:w-auto md:shrink md:rounded-none md:border-0 md:bg-transparent md:p-0 md:backdrop-blur-none"
+          >
             <div className="flex items-center gap-3">
               <img
                 src="/icons/hexicon.png"
