@@ -14,27 +14,6 @@ const galleryImages = [
   "/images/system-3.jpg",
 ];
 
-function CheckIcon({ className = "" }: { className?: string }) {
-  return (
-    <svg
-      viewBox="0 0 32 32"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      aria-hidden="true"
-      className={className}
-    >
-      <circle cx="16" cy="16" r="15" stroke="currentColor" strokeWidth="2" />
-      <path
-        d="M10 16.5l4 4 8-9"
-        stroke="currentColor"
-        strokeWidth="2"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-    </svg>
-  );
-}
-
 export default function OurSystem({ data }: { data: OurSystemData }) {
   return (
     <section id="system" className="relative w-full px-4 py-12 md:px-16 md:py-20">
@@ -55,7 +34,12 @@ export default function OurSystem({ data }: { data: OurSystemData }) {
             key={item.title}
             className="flex w-[280px] shrink-0 snap-start flex-col gap-6 rounded-card border border-offbeat-violet-border bg-offbeat-violet-soft p-4 backdrop-blur-sm md:w-auto md:shrink md:gap-4 md:rounded-none md:border-0 md:bg-transparent md:p-0 md:backdrop-blur-none"
           >
-            <CheckIcon className="h-8 w-8 text-offbeat-violet" />
+            <img
+              src="/icons/hexicon.png"
+              alt=""
+              aria-hidden="true"
+              className="h-8 w-8"
+            />
             <h3 className="text-sm font-semibold uppercase tracking-wide text-offbeat-white">
               {item.title}
             </h3>

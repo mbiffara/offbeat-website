@@ -15,27 +15,6 @@ const galleryImages = [
   "/images/builtfor-5.jpg",
 ];
 
-function CheckIcon({ className = "" }: { className?: string }) {
-  return (
-    <svg
-      viewBox="0 0 32 32"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      aria-hidden="true"
-      className={className}
-    >
-      <circle cx="16" cy="16" r="15" stroke="currentColor" strokeWidth="2" />
-      <path
-        d="M10 16.5l4 4 8-9"
-        stroke="currentColor"
-        strokeWidth="2"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-    </svg>
-  );
-}
-
 export default function BuiltFor({ data }: { data: BuiltForData }) {
   return (
     <section
@@ -53,10 +32,17 @@ export default function BuiltFor({ data }: { data: BuiltForData }) {
       <div className="mt-12 grid grid-cols-1 gap-6 md:mt-20 md:grid-cols-2 lg:grid-cols-4 lg:gap-8">
         {data.cards.map((card) => (
           <div key={card.title} className="flex flex-col gap-4">
-            <CheckIcon className="h-8 w-8 text-offbeat-violet" />
-            <h3 className="text-sm font-semibold uppercase tracking-wide text-offbeat-white">
-              {card.title}
-            </h3>
+            <div className="flex items-center gap-3">
+              <img
+                src="/icons/hexicon.png"
+                alt=""
+                aria-hidden="true"
+                className="h-8 w-8 shrink-0"
+              />
+              <h3 className="text-sm font-semibold uppercase tracking-wide text-offbeat-white">
+                {card.title}
+              </h3>
+            </div>
             <p className="text-base text-offbeat-white">{card.description}</p>
           </div>
         ))}
