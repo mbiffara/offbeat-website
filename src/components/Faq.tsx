@@ -10,7 +10,7 @@ type FaqData = {
 };
 
 export default function Faq({ data }: { data: FaqData }) {
-  const [open, setOpen] = useState<number | null>(0);
+  const [open, setOpen] = useState<number | null>(null);
 
   return (
     <section id="faq" className="relative w-full px-4 py-12 md:px-16 md:py-20">
