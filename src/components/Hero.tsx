@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 type HeroData = {
   eyebrow: string;
   titleStart: string;
@@ -14,13 +12,15 @@ export default function Hero({ data }: { data: HeroData }) {
     <section id="home" className="relative w-full overflow-hidden">
       <div className="relative">
         <div className="absolute inset-0 -z-10">
-          <Image
-            src="/images/hero.jpg"
-            alt=""
-            fill
-            priority
-            sizes="100vw"
-            className="object-cover"
+          <video
+            src="/images/hero.mp4"
+            poster="/images/hero-poster.jpg"
+            autoPlay
+            loop
+            muted
+            playsInline
+            preload="auto"
+            className="absolute inset-0 h-full w-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-offbeat-black/30 via-offbeat-black/50 to-offbeat-black" />
         </div>
