@@ -18,8 +18,16 @@ export default function Home() {
       <Credentials data={content.credentials} />
       <BuiltFor data={content.builtFor} />
       <WeWork data={content.weWork} />
-      <ContactUs data={content.contact} />
-      <Faq data={content.faq} />
+      <div className="relative isolate">
+        <img
+          src="/images/ondasexpansivas.gif"
+          alt=""
+          aria-hidden="true"
+          className="pointer-events-none absolute left-0 top-1/2 -z-10 w-[60%] max-w-[900px] -translate-x-1/4 -translate-y-1/2 opacity-70 mix-blend-screen"
+        />
+        <ContactUs data={content.contact} />
+        <Faq data={content.faq} />
+      </div>
       <Footer data={content.footer} />
     </main>
   );
