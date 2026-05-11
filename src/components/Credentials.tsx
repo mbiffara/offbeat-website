@@ -53,20 +53,6 @@ export default function Credentials({ data }: { data: CredentialsData }) {
             sizes="(min-width: 768px) 50vw, 100vw"
             className="object-cover"
           />
-          <div className="absolute inset-0 grid place-items-center">
-            <div className="grid h-28 w-28 place-items-center rounded-full bg-offbeat-violet/80 text-offbeat-white backdrop-blur-sm">
-              <svg
-                width="32"
-                height="32"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                aria-hidden="true"
-              >
-                <path d="M8 5v14l11-7L8 5z" fill="currentColor" />
-              </svg>
-            </div>
-          </div>
         </div>
 
         <div className="flex flex-col justify-center gap-8">

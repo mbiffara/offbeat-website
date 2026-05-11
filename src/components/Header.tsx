@@ -12,7 +12,7 @@ export default function Header({ data }: { data: HeaderData }) {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 w-full px-4 pt-4 md:px-11 md:pt-6">
+    <header className="fixed inset-x-0 top-0 z-50 w-full px-4 pt-4 md:px-11 md:pt-6">
       <div className="mx-auto flex max-w-[1089px] items-center justify-between rounded-card border border-offbeat-violet-border bg-offbeat-violet-soft px-4 py-3 backdrop-blur-md md:px-8 md:py-4">
         <a href="#home" className="text-xl font-semibold tracking-tight text-offbeat-white">
           {data.logoAlt}

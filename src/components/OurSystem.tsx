@@ -62,7 +62,7 @@ export default function OurSystem({ data }: { data: OurSystemData }) {
       </div>
 
       <div className="mt-12 grid grid-cols-1 gap-4 md:mt-20 md:grid-cols-3 md:gap-8">
-        {galleryImages.map((src, i) => (
+        {galleryImages.map((src) => (
           <div
             key={src}
             className="relative aspect-[1/1.6] overflow-hidden rounded-card md:aspect-[416/664]"
@@ -74,24 +74,6 @@ export default function OurSystem({ data }: { data: OurSystemData }) {
               sizes="(min-width: 768px) 33vw, 100vw"
               className="object-cover"
             />
-            <div className="absolute inset-0 grid place-items-center">
-              <div className="grid h-20 w-20 place-items-center rounded-full bg-offbeat-violet/80 text-offbeat-white backdrop-blur-sm">
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  aria-hidden="true"
-                >
-                  <path
-                    d="M8 5v14l11-7L8 5z"
-                    fill="currentColor"
-                  />
-                </svg>
-                <span className="sr-only">Gallery image {i + 1}</span>
-              </div>
-            </div>
           </div>
         ))}
       </div>
