@@ -10,7 +10,7 @@ type HeroData = {
 export default function Hero({ data }: { data: HeroData }) {
   return (
     <section id="home" className="relative w-full overflow-hidden">
-      <div className="relative">
+      <div className="relative isolate">
         <div className="absolute inset-0 -z-10">
           <video
             src="/images/hero.mp4"
